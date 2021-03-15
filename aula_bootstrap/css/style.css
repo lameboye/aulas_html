@@ -1,0 +1,94 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    background-color:#EFF5FB;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.quemsomos{
+    background-color: #FBEFF2;
+}
+
+.margin{
+    margin-top:20px;
+    padding-bottom:20px;
+    padding-top: 20px;
+}
+
+.margin img{
+    border-radius:1%;
+}
+
+.alinhamento{
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo{
+    border: 3px solid white;
+    margin-left: 20px;
+}
+
+.conteudo h4{
+    margin: 50px 10px 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.conteudo h6{
+    text-align: justify;
+    margin: 5px 10px;
+}
+
+.produtos{
+    background-color: #A68064; 
+}
+
+.produtos .conteudo{
+    border: 3px solid #cfa688;
+}
+
+.conteudo i{
+    margin-right: 7px;
+}
+
+.parceiros{
+    background-color:#EFF5FB;
+    
+}
+
+.parceiros .conteudo{
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parceiros i{
+    margin-right: 20px;
+}
+
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width:700px){
+    .alinhamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .margin img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 50%;
+    }
+    
+    .conteudo{
+        margin: 10px;
+    }
+}
