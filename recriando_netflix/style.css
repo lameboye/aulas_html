@@ -1,0 +1,202 @@
+:root {
+    --vermelho: #E50914;
+    --preto:  #141414
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--preto);  
+    font-family: helvetica;
+    font-size: 12px;
+    line-height: 1.2;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: space-between;
+}
+
+.logoinicio nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 17px;
+}
+
+.logoinicio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.itens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.itens i {
+    padding-right: 15px;
+    margin-left: 10px;
+}
+
+.itens:hover{
+    cursor: pointer;
+}
+
+.itens img {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+.logoinicio .logo{
+    width: 135px;
+    height: 30px;
+    margin-right: 50px;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+header nav a:hover{
+    color: #fff;
+    font-size: 13px;
+}
+
+.navegardrop{
+    display: none;
+    text-decoration: none;
+    color: #aaa;
+    
+}
+
+.navegardrop ul{
+    list-style: none;
+}
+
+.navegarinicial{
+    display: block;
+}
+
+.navegardrop:hover{
+    cursor: pointer;
+}
+
+header nav .navegardrop ul li ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+header nav .navegardrop ul li:hover ul {
+    display: block;
+}
+
+header nav .navegardrop ul li ul li a {
+    display: block;
+    text-decoration: none;
+    color: #aaa;
+    margin: 10px;
+}
+
+.navegardrop a:hover {
+    color: white;
+    transition: 0.2s ease all;
+}
+
+/*FILME PRINCIPAL*/
+
+.filmeprincipal{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filmeprincipal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    max-width: 60vw;
+    max-height: 30vh;
+    text-align:left;
+}
+
+.titulo {
+    margin-top: 15%;
+    height: 150px;
+    max-width: 380px;
+}
+
+.botao{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:bolder;
+    border: none;
+    padding: 11px 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+
+.botao:hover:nth-child(2){
+    background-color:rgba(105, 105, 105, 0.3);
+}
+
+.botao:hover:nth-child(1)
+{
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+.botao:nth-child(1){
+    background-color:white;
+    color: var(--preto);
+}
+
+.botao:nth-child(2){
+    background-color:rgba(105, 105, 105, 0.6);
+    color: white;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 50px;
+}
+
+.wrappertodo{
+    background: linear-gradient(rgba(59, 56, 56, 0.5),rgba(0,0,0,0.50)100%) ,url(img/ae45ee7d4769909cbbc53a39eb3c8e4f.jpg);
+    max-height: 577px;
+    max-width: 1280px;
+
+}
+
+.boxfilme{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.carroselfilmes{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
