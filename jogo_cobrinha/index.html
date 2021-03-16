@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- IMPORTANDO BOOTSTRAP -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+<!-- IMPORTANDO CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<!-- IMPORTANDO JS -->
+
+    <script defer src="script.js"></script>
+
+<!-- IMPORTANDO FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/30fdf0f1d9.js" crossorigin="anonymous"></script>    
+
+    <title>COBRINHA</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-gamepad"></i>
+            SNAKE
+        </a>
+    </nav>
+    <div class="wrapperjogo">
+        <div class="pontuacao">
+            <h1 id="pontuacao">0</h1>
+        </div>
+        <div class="cronometro">
+                <p>
+                    <span id="th">00</span> :
+                    <span id="tm">00</span> :
+                    <span id="ts">00</span> :
+                    <span id="td">00</span> 
+                </p>
+            </div>
+        </div>
+
+        <div class="jogo">
+
+            <canvas id="snake" width="512" height="512">
+    
+            </canvas>
+    
+        </div> 
+
+        <div class="botoes">
+            <button type="button" id="iniciar" class="btn btn-outline-warning" onclick="iniciandojogo();">Iniciar</button>
+            <button type="button" id="refresh" disabled class="btn btn-outline-info" value="Refresh Page" onClick="window.location.reload()">Resetar</button>
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>
